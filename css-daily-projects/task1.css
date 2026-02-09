@@ -1,0 +1,34 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#heading{
+    background-color: rgb(47, 255, 68);
+}
+#heading h1{
+    color: white;
+}
+#heading p{
+    color: yellow;
+    font-size: 20px;
+}
+#intro h2{
+    color: rgb(0, 119, 255);
+}
+#topic{
+    color: palevioletred;
+}
+#fundamentals{
+    color: chocolate;
+}
+#jsResources{
+    color:palevioletred;
+}
+#table{
+    background-color: beige;
+}
+#design{
+    color: blueviolet;
+}
+footer p{
+    background-color: aliceblue;
+}

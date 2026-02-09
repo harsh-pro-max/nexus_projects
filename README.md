@@ -1,4 +1,4 @@
-# Nexus HTML Daily Projects 🚀
+# Nexus batch practice Daily Projects share🚀
 
 This repository contains my **daily nexus batch  practice projects** completed as part of the **Nexus Batch learning workflow**.
 
