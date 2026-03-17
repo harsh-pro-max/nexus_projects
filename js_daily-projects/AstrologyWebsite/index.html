@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Astro Insight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔮 Astro Insight</h1>
+        <p class="subtitle">Discover Your Destiny</p>
+
+        <form id="astroForm">
+            <input type="text" id="name" placeholder="First Name" required>
+            <input type="text" id="surname" placeholder="Surname" required>
+
+            <div class="dob-group">
+                <input type="number" id="day" placeholder="Day" min="1" max="31" required>
+                <input type="number" id="month" placeholder="Month" min="1" max="12" required>
+                <input type="number" id="year" placeholder="Year" min="1900" max="2026" required>
+            </div>
+
+            <button type="submit">Check Astrology</button>
+        </form>
+
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
