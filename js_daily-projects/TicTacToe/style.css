@@ -1,0 +1,187 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white; */
+}
+
+
+/* Container Styles */
+.container {
+    text-align: center;
+    /* background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    min-height: 400px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+}
+.ticTacToe{
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 95vh;
+    margin-top:5px;
+}
+.player{
+    height: 250px;
+}
+
+.player1 , .player2{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.growImg{
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    /* padding-top: 10px; */
+}
+
+/* Board Styles */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-template-rows: repeat(3, 110px);
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+/* Individual Cells */
+.cell {
+    width: 110px;
+    height: 110px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.cell.taken {
+    pointer-events: none;
+    color: #555;
+}
+.win{
+    background-color: yellow !important;
+    /* transform: scale(1.1); */
+}
+
+
+.winning-message {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Restart Button */
+button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+/* Responsive Styles */
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px){
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .ticTacToe{
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .player1,
+    .player2{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .player{
+        height: 180px;
+    }
+
+    .board{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .cell{
+        width: 90px;
+        height: 90px;
+        font-size: 4rem;
+    }
+
+}
+
+
+@media (max-width:480px){
+
+.board{
+grid-template-columns:repeat(3,75px);
+grid-template-rows:repeat(3,75px);
+}
+
+.cell{
+width:75px;
+height:75px;
+font-size:3rem;
+}
+
+}
