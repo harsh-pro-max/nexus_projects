@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* this code written by me and corrected by chatGpt only headers only  */
+/* ================= GLOBAL CONTAINER ================= */
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background: #fff;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+/* LOGO */
+.logo img{
+    height: 50px;
+}
+
+/* CENTER MENU */
+.homes{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.homeLink{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    margin-left: 5px;
+}
+
+.home img,
+.experience img,
+.services img{
+    height: 30px;
+}
+
+/* RIGHT SIDE */
+.signin{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.host button{
+    background: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.host button:hover{
+    background: #f2f2f2;
+}
+
+.menu-icon{
+    background: #f2f2f2;
+    padding: 0.6rem;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+/* ================= STICKY SEARCH ================= */
+
+.sticky-wrapper{
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+}
+
+.addInfo{
+    display: flex;
+    width: 70%;
+    background: #fff;
+    height: 65px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+/* INPUT SECTIONS */
+.location,
+.when,
+.guest{
+    flex: 1;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.location:hover,
+.when:hover,
+.guest:hover{
+    background: #ebebeb;
+}
+
+.location input,
+.when input,
+.guest input{
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    background: transparent;
+}
+
+/* ================= CONTENT ================= */
+
+main{
+    margin-top: 2rem;
+    line-height: 1.6;
+    margin-left: 2rem;
+}
+
+.cards{
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+}
+
+.cards::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    min-width: 260px;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+/* IMAGE */
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+/* BADGE */
+.card >p{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(255,255,255,0.9);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* TITLE AREA */
+.cardTitle{
+    margin-top: 10px;
+}
+
+.cardTitle h2{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.cardTitle p{
+    font-size: 0.9rem;
+    color: #706c6c;
+}
+
+/* footer section */
+.footLinks{
+    display: flex;
+    background-color: #F7F7F7;
+    justify-content: space-around;
+}
+.foot h3{
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    color: #706c6c;
+    font-weight: 900;
+}
+.foot a{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* flex-direction: row; */
+    text-decoration: none;
+    color: #706c6c;
+}
+.term{
+    font-size: 1.2rem;
+}
+.lastFoot{
+    border-bottom: 1px solid rgb(126, 119, 119);
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3px;
+    /* gap: 2rem; */
+    padding-top: 3rem;
+}
+
+.socail button{
+    /* padding-top: 2rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #F7F7F7;
+}
