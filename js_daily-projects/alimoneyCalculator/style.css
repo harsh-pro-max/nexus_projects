@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* header section started */
+header{
+    background-image: url("./assets/alimoney.jpeg");
+    height:120vh;
+    background-size: cover; 
+    margin-bottom: 2rem;
+}
+.head{
+    /* display: flex; */
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1rem;
+    /* justify-content: space-between; */
+    
+}
+.firstHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    
+}
+.heading h1{
+    font-size: 2.4rem;
+    color: white;
+}
+.heading h1 > span{
+    color: orange;   
+}
+.heading p{
+    color: white;
+    width: 400px;
+}
+
+
+.headContact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headContact img{
+    height: 40px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+.local h3,.mail > h3{
+    color: white;
+}
+.local p{
+    opacity: 0.7;
+    color: black;
+}
+.mail p{
+    color: orange;
+}
+.headContact i{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    opacity: 0.7;
+}
+
+/* second head style */
+
+.secHead{
+    background-color:#F2B23D;
+}
+
+.navMenu{
+    list-style:none;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.navMenu li{
+    position:relative;
+}
+
+.navMenu li a{
+    display:block;
+    padding:1rem 1.5rem;
+    color:white;
+    text-decoration:none;
+    font-size:1.2rem;
+}
+
+/* hover effect */
+
+.navMenu li a:hover{
+    background:white;
+    color:#F2B23D;
+}
+
+/* submenu */
+
+.submenu{
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#F2B23D;
+    list-style:none;
+    width:220px;
+    display:none;
+}
+
+.submenu li a{
+    padding:0.8rem 1rem;
+    display:block;
+}
+
+/* hover open */
+
+.dropdown:hover .submenu{
+    display:block;
+}
+
+/* main section  */
+.searchSection{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 2rem;
+}
+.searchSection h2{
+    font-size: 2rem;
+} 
+
+.searchSection form > input{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    font-size: 1rem;
+    background-color: #F0EFEF;
+    border: none;
+
+
+}
+
+.searchSection form > button{
+    padding: 0.5rem ;
+    color: white;
+    background-color: #F2B23D;
+    border:none;
+    font-size: 1rem;
+}
+
+/* calculation section */
+.calculationSection{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    justify-items: center;
+    
+    gap: 2rem;
+}
+/* alimoney form calculation */
+.alimoneyCal{
+    background-color: #F0F4F8;
+    width: 30vw;
+    
+}
+.alimoneyCal form{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: 100%;
+}
+.alimoneyCal form > h2{
+    color: #007AFF;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+.alimoneyCal form > label{
+    font-size: 1.1rem;
+    
+    
+}
+.alimoneyCal form > input{
+    width: 75%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+.calBtn{
+    background-color: #007AFF;
+    color: white;
+    border: none;
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+.alimoneyCal form > select {
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+
+}
+.result{
+    text-align: center;
+    /* padding-left:1.5rem; */
+    padding: 1rem;
+}
+.result h3{
+    color: #007AFF;
+}
+.result p{
+    font-size: 0.9rem;
+    opacity: 0.7;
+    font: bold;
+}
+
+/* Welcome and rules sections */
+.welcome{
+    width: 30vw;
+}
+.welcome h2{
+    font-size: 1.5rem;
+    padding-bottom: 1.2rem;
+}
+.welcome p{
+    padding-bottom: 1rem;
+    opacity: 0.7;
+}
+.welcome h3{
+    opacity: 0.7;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+.welcome ul li{
+    opacity: 0.7;
+    padding-bottom: 0.5rem;
+}
+
+.welcome strong{
+    opacity: 0.6;
+    font-style: italic;
+    
+}
+
+.secondUl{
+    list-style: none;
+    padding-left:0;
+    
+}
+
+.secondUl li{
+position: relative;
+padding-left:40px;
+}
+
+.secondUl li::before{
+content:"❝";
+position:absolute;
+left:0;
+top:-5px;
+font-size:40px;
+color:#d3d3d3;
+}
+
+/* pages style  */
+.pages{
+    width: 30vw;
+}
+.pages h2{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.pages ul >li{
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    opacity: 0.7;
+    border-bottom: 0.001rem dashed black;
+}
+.pages ul >li:hover{
+    color: #F2B23D;
+}
+
+
+.pages h3{
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* liability section */
+.Liability{
+    padding-left: 5vw;
+    width: 65vw;
+    padding-bottom: 4rem;
+}
+.Liability h2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.Liability p{
+    padding-bottom: 1rem;
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+.Liability h3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.Liability table{
+    border: 2px solid black;
+}
+.Liability table > thead,th,td{
+    border: 1px solid black;
+    padding: 10px;
+    width: 30%;
+}
+
+/* footer section */
+footer{
+    background-color: #24272E;
+}
+.firstFoot{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: white;
+    gap: 2rem;
+    
+}
+.footContact{
+    background-color:#1e232b;
+    width: 30%;
+    padding: 2rem;
+}
+.footContact h2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.footContact h3{
+    font-size: 1.1rem;
+    opacity: 0.7;
+    padding-bottom: 1rem;
+}
+.footContact p{
+    padding-bottom: 0.7rem;
+    opacity: 0.7;
+}
+.usefullLinks{
+    background-color: #1e232b;
+    padding: 2rem;
+    width: 30%;
+}
+.usefullLinks h2{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.pagesList{
+display:flex;
+flex-direction:column;
+background:#1e232b;
+padding:20px;
+}
+
+.pagesList a{
+color:#cfd6df;
+text-decoration:none;
+padding:8px 0;
+font-size:16px;
+}
+
+.pagesList a:hover{
+color:#ffb400;
+}
+
+.posts{
+    width: 30%;
+    background-color: #1e232b;
+}
+.posts h2{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    
+}
+/* last foot style */
+.lastFoot{
+    background-color: #1E2025;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: white;
+}
+
+
+/* ================= MOBILE VIEW ================= */
+
+@media (max-width:768px){
+
+/* header height reduce */
+header{
+height:auto;
+padding-bottom:2rem;
+}
+
+/* header top section */
+.firstHead{
+flex-direction:column;
+align-items:flex-start;
+gap:1rem;
+}
+
+.heading p{
+width:100%;
+}
+
+/* contact section */
+.headContact{
+flex-direction:column;
+align-items:flex-start;
+}
+
+/* navigation menu */
+.navMenu{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.navMenu li{
+width:100%;
+}
+
+.navMenu li a{
+width:100%;
+}
+
+/* search section */
+.searchSection{
+flex-direction:column;
+gap:1rem;
+}
+
+/* main calculator section */
+.calculationSection{
+flex-direction:column;
+}
+
+/* form section */
+.alimoneyCal{
+width:100%;
+}
+
+.alimoneyCal form input,
+.alimoneyCal form select{
+width:100%;
+}
+
+.calBtn{
+width:100%;
+}
+
+/* welcome section */
+.welcome{
+width:100%;
+}
+
+/* pages section */
+.pages{
+width:100%;
+}
+
+/* liability table section */
+.Liability{
+width:100%;
+padding-left:5vw;
+padding-right:5vw;
+overflow-x:auto;
+}
+
+/* footer */
+.firstFoot{
+flex-direction:column;
+}
+
+.footContact,
+.usefullLinks,
+.posts{
+width:100%;
+}
+
+.lastFoot{
+flex-direction:column;
+gap:1rem;
+text-align:center;
+}
+
+}

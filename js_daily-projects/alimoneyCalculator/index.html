@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimoney calculator</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="firstHead">
+                <div class="heading">
+                    <h1>MEN HELPLINE <span>ORG</span> </h1>
+                    <p>Mens Right NGO | Helpline for Men | Delhi, Bangalore, Mumbai</p>
+                </div>
+                <div class="headContact">
+                    <img src="./assets/location.png" alt="location">
+                    <div class="local">
+                        <h3>location</h3>
+                        <p>Delhi, India</p>
+                    </div>
+                    <img src="./assets/mail.png" alt="mail box">
+                    <div class="mail">
+                        <h3>Email</h3>
+                        <p>harsh90064@gmail.com</p>
+                    </div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                </div>
+            </div>
+            <div class="secHead">
+                <ul class="navMenu">
+                
+                    <li><a href="#">Home</a></li>
+                
+                    <li class="dropdown">
+                        <a href="#">About Us</a>
+                        <ul class="submenu">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Men's Rights in India</a></li>
+                            <li><a href="#">Domestic Violence Against Men</a></li>
+                        </ul>
+                    </li>
+                
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Press Release</a></li>
+                    <li><a href="#">Our Vision</a></li>
+                    <li><a href="#">Petition</a></li>
+                    <li><a href="#">Calculator</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="searchSection">
+            <h2>Alimony Calculator</h2>
+            <form action="">
+                <input type="text" placeholder="Search..."><button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+
+        <div class="calculationSection">
+            <div class="alimoneyCal">
+                <form action="">
+                    <h2>Alimoney Calculator</h2>
+                    <label for="monSalry">Husband's Monthly Income(&#8377;)</label><br>
+                    <input type="number" name="monSalry" id="monSalry" value=""  placeholder="Enter husband's monthly income (e.g. 50000)"><br><br>
+
+                    <label for="wifeSalry">
+                        Wife's Monthly Income(&#8377;)
+                    </label><br>
+                    <input type="number" id="wifeSalry" name="wifeSalry" placeholder="Enter wife's monthly income (0 if not earning)"><br><br>
+
+                    <label for="liability">
+                        Husband's Mounthly Libilities(&#8377;)
+                    </label><br>
+                    <input type="number" id="liability" name="liability" placeholder="Monthly expenses (e.g. 15000)"><br><br>
+
+                    <label for="wifeliablity">
+                        Wife's Monthly Liability(&#8377;)
+                    </label><br>
+                    <input type="number" id="wifeliablity" name="wifeliablity" placeholder="Wife's monthly (optional)"><br><br>
+
+                    
+                    <label for="durationYear">
+                        Duration of Marriage(years)
+                    </label><br>
+                    <input type="number" id="durationYear" name="durationYear" min="0" max="80" placeholder="Years of marriage (e.g. 5)"><br><br>
+
+                    
+                    <label for="noOfChild">
+                        Number of Children
+                    </label><br>
+                    <input type="number" id="noOfChild" name="noOfChild" placeholder="Number of dependent children"><br><br>
+
+                    <label for="custdy">
+                        Custody of Children
+                    </label><br>
+                    <select name="custudy" id="custudy">
+                        <option value="5000">Wife</option>
+                        <option value="0">Husband</option>
+                        <option value="2500">Shared</option>
+                    </select><br><br>
+
+                    <label for="wifeFactor">
+                        Wife's Contribution to Marriage
+                    </label><br>
+                    <select name="wifeFactor" id="wifeFactor">
+                        <option value="0">1 - No contribution</option>
+                        <option value="2000">2 - Some Support</option>
+                        <option value="4000">3 - Helped with chores</option>
+                        <option value="6000">4 - Homemaker/partial earner</option>
+                        <option value="8000">5 - fullmaker</option>
+                    </select><br><br>
+
+
+                    <label for="prospectorFactor">
+                        Future Prospects Factor (-2 to +2)
+                    </label><br>
+                    <select name="prospectorFactor" id="prospectorFactor">
+                        <option value="-3000">-2 -No prospects</option>
+                        <option value="-2000">-1 Low prospects</option>
+                        <option value="0">0 - Netural </option>
+                        <option value="2000">=-Some prospects</option>
+                        <option value="4000">+2 - Strong prospects</option>
+                    </select><br><br>
+
+
+                    <label for="livingStandard">
+                        Standard of Living
+                    </label><br>
+                    <select name="livingStandard" id="livingStandard">
+                        <option value="1000">1 - Basic </option>
+                        <option value="3000">3 - Lower-middle</option>
+                        <option value="5000">5 - Middle-class </option>
+                        <option value="7000">7 - Upper-middle</option>
+                        <option value="10000">10 - Luxury</option>
+                    </select><br><br>
+
+                    <label for="otherNeedsCost">
+                        Special Needs Costs(&#8377;)
+                    </label><br>
+                    <input type="number" id="otherNeeds" placeholder="Medical or special care expenses"><br><br>
+
+                    <button class="calBtn">Calculate Maintenance</button>
+
+                </form>
+                <div class="result" hidden>
+                    <h3 class="showResult"></h3>
+                    <p>Disclaimer: This is a tentative amount based on input data. Accuracy is not guaranteed. Men Helpline does not assure the final legal outcome.</p>
+                </div>
+            </div>
+            <div class="welcome">
+                <h2>Welcome to the world of financial exploitation.</h2>
+                <p>The Alimony world (gujara bhatta) where laws are designed to scrutinize every single rupee a husband earns — or is capable of earning — while overlooks the wife’s financial standing. The system is biased, and the lawmakers have their eyes on every penny you make, but ignores the contribution or earning capacity of the wife.</p>
+
+                <p>This alimony calculator is based on the Supreme Court guidelines in Rajnish Vs Neha case, which the calculated result is based on certain assumptions and hypothesis, so the correctness of result is not assured.</p>
+                <p>The Court laid out that the quantum of maintenance/alimony should be based on following 8 </p>
+                <h3>Factor alimoney rule:</h3>
+                <ul>
+                    <li>Status of parties and their lifestyle during marriage.</li>
+                    <li>Earning capacity and income (actual and potential).</li>
+                    <li>Needs of wife and dependent children.</li>
+                    <li>Duration of marriage.</li>
+                    <li>Age and health of both parties.</li>
+                    <li>Child custody & financial responsibility.</li>
+                    <li>Financial liabilities & dependents.</li>
+                    <li>Contribution to household (monetary & non-monetary).</li>
+                </ul>
+                <strong class="lastStr">Notably, the duration of the marriage and the husband’s financial liabilities are not given due consideration. If the husband is jobless, the court assesses his earning capacity based on his financial records, such as income and expenditures from the past three years.</strong>
+                <ul class="secondUl">
+                    <li>The financial capacity of the husband, his actual income, reasonable expenses for his own maintenance, and dependent family members whom he is obliged to maintain under law, would be required to be taken into consideration, to arrive at the appropriate quantum of maintenance.”, Supreme Court in Rajnish v. Neha, 2020</li>
+                </ul>
+            </div>
+            <div class="pages">
+                <h2>Pages</h2>
+                <ul>
+                    <li>About Men Helpline</li>
+                    <li>Alimoney Calculator</li>
+                    <li>All India Men Helpline: Contact and Resources</li>
+                    <li>Crime of Being Sons Parent</li>
+                    <li>Domestic Violence Against Men</li>
+                    <li>False 498A Expense Estimated and financial impact </li>
+                    <li>Fight False IPC 498a Case </li>
+                    <li>Men Helpline Approach </li>
+                    <li>Men Helpline Contact Number</li>
+                    <li>MEN HELPLINE NUMBER</li>
+                    <li>Men Helpline vision and Mission </li>
+                    <li>Men Helpline Volunteer</li>
+                    <li>Men Lives Matter To - End the bias Campaign</li>
+                    <li>men's justice Day - Founding Day Vision </li>
+                    <li>Men's Rights in India explained </li>
+                </ul>
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li>Selective Equality in Al Governance Must
+                    Be Rejected, Says Men Helpline</li>
+                    <li>Time to Eliminate Stereotypes Legal
+                    Framework - Zero Alimony in Short Marriages
+                    </li>
+                    <li>
+                    Ease of Doing Business vs. Ease of Being a
+                    Man: The Forgotten Liberty</li>
+                    <li>Dowry Laws in India - The Forgotten
+                    Suffering of Men
+                    </li>
+                    <li>Frequently Asked Question on Police
+                    Harassment and Arrest</li>
+                </ul>
+            </div>
+        </div>
+        <div class="Liability">
+            <h2>Liability</h2>
+            <p>However the consideration is all on the court discretion. The burden of proof is on the husband to show these liabilities with documents for Bank statements, Loan EMIs, Medical bills, Parental dependency proof.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Valid ?</th>
+                        <th>Type of Expense</th>
+                        <th>Court’s View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Valid</td>
+                        <td>Home loan, parental support, insurance	</td>
+                        <td>Considered reasonable</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Invalid</td>
+                        <td>Lavish lifestyle, vacations, luxury car EMIs</td>
+                        <td>Treated as voluntary excess</td>
+                    </tr>
+
+                </tbody>
+                
+            </table>
+            <h3>Pre-nuptial Agreement – a Solution</h3>
+                <p>A prenuptial agreement is a way for both the husband and wife to define their responsibilities and financial obligations in the event of a separation. Unfortunately, lawmakers, influenced by feminist-led movements, shifted their focus from gender-neutral laws to biased ones.</p>
+        </div>
+
+
+    </main>
+    <!-- footer section -->
+    <footer>
+        <div class="firstFoot">
+            <div class="footContact">
+                <h2>Keep in Touch</h2>
+                <h3>Address: Bihar, India</h3>
+                <p>Phone:  8228862120</p>
+                <p>Email:    harsh90064@gmail.com</p>
+                <p>Web:  httpS:/menhelpline.org</p>
+                <span><i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                </span>
+            </div>
+            <div class="usefullLinks">
+                <h2>Useful Links</h2>
+                <div class="pagesList">
+                    <a href="#">Home</a><a href="#">About Men Helpline</a>
+
+                    <a href="#">Alimony Calculator</a>
+
+                    <a href="#">All India Men Helpline: Contact and Resources</a>
+
+                    <a href="#">Crime of Being Sons Parent</a>
+
+                    <a href="#">Domestic Violence Against Men</a>
+
+
+                    <a href="#">False 498A Expense Estimator and financial impact</a>
+
+                    <a href="#">Fight False IPC 498a Case</a>
+
+                    <a href="#">Men Helpline Approach</a>
+
+                    <a href="#">Men Helpline Contact Number</a>
+
+                    <a href="#">MEN HELPLINE NUMBER</a>
+
+                    <a href="#">Men Helpline Vision and Mission</a>
+
+                    <a href="#">Men Helpline Volunteer</a>
+
+                    <a href="#">Men Lives Matter Too – End the Bias Campaign</a>
+
+                    <a href="#">Men’s Justice Day – Founding Day Vision</a>
+
+                    <a href="#">Men’s Rights in India explained</a>
+                </div>
+            </div>
+
+            <div class="posts">
+                <h2>Latest Posts</h2>
+
+                <div class="post">
+                    <img src="" alt="">
+                    <div class="postCon">
+                        <h3>Selective Equality in Al Governance Must Be Rejected,</h3>
+                        <p>February 22, 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lastFoot">
+            <p>Copyright © 2020. this clone created by harsh kushwaha</p>
+
+            <p>Copyright of <span>Men Helpline</span></p>
+        </div>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
