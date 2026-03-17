@@ -1,0 +1,614 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* top header */
+.topBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 10%; */
+    /* padding-top: 1.5rem; */
+    background-color: #F5F5F5;
+    
+}
+.topBtns{
+    /* padding: 1.5rem; */
+    padding-left: 2rem;
+}
+.topBtns> button{
+    padding: 1.5rem;
+    border: none;
+    background-color:#F5F5F5 ;
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    color: #454548;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.topSign{
+    padding-right: 2rem;
+}
+.topSign button{
+    padding: 0.5rem;
+    
+    font-size: 1.1rem;
+    color: #454548;
+    /* opacity: 0.8; */
+    cursor: pointer;
+    border-radius: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* background-color: #CCE4F6; */
+}
+.search{
+    background-color: #CCE4F6;
+    font-weight: 500;
+    
+}
+.lang{
+    background-color: #FFFFFF;
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+}
+
+/* main header */
+.mainHead{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding-top: 0.5rem;
+    
+}
+.logoImg{
+    width: 100px;
+    padding-left: 2rem;
+    
+}
+
+.btnHead{
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.istyle{
+    font-size: 1.7rem;
+    background-color: #0078D0;
+    padding: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: white;
+}
+.istyle:hover{
+    background-color: #0078D0;
+    opacity: 0.5;
+}
+
+/* hero section start */
+.update{
+    padding-top:1rem;
+    background-color: black;
+    align-items: center;
+    /* justify-content: center; */
+    color: white;
+    font-size: 1.4rem;
+    justify-items: center;
+    padding: 1rem;
+}
+.update a{
+    color: white;
+}
+.heroCards{
+    background-image: url(./assets/back3.jpg);
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    justify-items: center;
+    
+}
+.timer{
+    height: 10vw;
+    width: 60vw;
+    background-color: white;
+    opacity: 0.9;
+    justify-items: center;
+    padding-top: 1.5rem;
+}
+.timer h1{
+    padding-bottom: 1rem;
+}
+.timer >h1 >span{
+    opacity: 0.6;
+}
+.countDown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time h2{
+    font-size: 3rem;
+    padding-right: 2rem;
+    /* padding-left: 2rem; */   
+}
+.time p{
+    font-size: 1.4rem;
+    word-spacing: 45px;
+    padding-left: 1rem;
+}
+
+.countDown img{
+    width: 150px;
+    /* height: 150px; */
+    padding-left: 1rem;
+}
+
+/* card 2 */
+.olympic2028{
+    height: 25vw;
+    width: 60vw;
+    background-color: white;
+    opacity: 0.9;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;   
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    
+}
+.olympic2028 img{
+    padding-right: 1rem;
+}
+
+.olyDetail h3{
+    font-size: 4rem;
+    margin-right: 5rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+.olyDetail h4{
+    font-size: 2rem;
+}
+.olyDetail h5{
+    opacity: 0.8;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+
+}
+.olyDetail button{
+    width: 70%;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding-top:0.5rem ;
+    padding-bottom: 0.5rem;
+}
+
+.cardStyle{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+.cardStyle img{
+    width: 300px;
+    padding-left: 3rem;
+    
+}
+.cardDetail > h3{
+    font-size: 2.5rem;
+}
+.cardDetail > b{
+    font-size: 2rem;
+    opacity: 0.7;
+}
+.cardDetail h4{
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+.cardDetail p{
+    font-size: 2rem;
+    opacity: 0.7;
+    word-spacing: 25px;
+    padding-bottom: 1.5rem;
+}
+
+/* card heading  */
+.cardHead{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+.cardHead h2{
+    padding-left: 2rem;
+
+}
+.cardHead button{
+    margin-right: 2rem;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* ================= OLYMPIC GAMES SCROLL SECTION ================= */
+
+.olympicGames {
+    display: flex;
+    gap: 2rem;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+    padding: 2rem 3rem;
+
+    align-items: flex-start;
+}
+
+/* hide scrollbar clean way */
+.olympicGames::-webkit-scrollbar {
+    height: 6px;
+}
+.olympicGames::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* IMPORTANT: prevent shrinking */
+.hostCard {
+    flex: 0 0 auto;   /* stops collapsing */
+    width: 210px;
+    height: auto;
+
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hostCard:hover {
+    transform: translateY(-5px);
+}
+
+.hostCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* underline effect */
+.hostCard hr {
+    height: 4px;
+    background-color: black;
+    border: none;
+    opacity: 0.4;
+    margin-top: 1.2rem;
+    transition: 0.3s;
+}
+
+.hostCard:hover hr {
+    opacity: 1;
+}
+
+.hostCard h2 {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-top: 0.8rem;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background-color: #0a0a0a;
+  color: #ccc;
+  padding: 60px 0 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Top Section */
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-col h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+
+/* Divider */
+
+.footer-divider {
+  height: 1px;
+  background-color: #222;
+  margin: 50px 0;
+}
+
+/* Middle Links */
+
+.footer-middle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.footer-middle a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-middle a:hover {
+  color: #ffffff;
+}
+
+/* Bottom Section */
+
+.footer-bottom {
+  text-align: center;
+}
+
+.policy-links {
+  margin-bottom: 15px;
+}
+
+.policy-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #888;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.policy-links a:hover {
+  color: #ffffff;
+}
+
+copyright {
+  font-size: 13px;
+  color: #666;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .policy-links a {
+    display: block;
+    margin: 8px 0;
+  }
+}
+
+/* ================= RESPONSIVE IMPROVEMENT ================= */
+
+/* ---------- Large Tablet (≤ 1200px) ---------- */
+@media (max-width: 1200px) {
+
+  .timer {
+    width: 80vw;
+  }
+
+  .olympic2028 {
+    width: 80vw;
+  }
+
+  .olyDetail h3 {
+    font-size: 3rem;
+    margin-right: 2rem;
+  }
+
+  .cardDetail h4 {
+    font-size: 2.2rem;
+  }
+
+}
+
+
+/* ---------- Tablet (≤ 992px) ---------- */
+@media (max-width: 992px) {
+
+  /* Top Header */
+  .topBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+
+  .topBtns > button {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  /* Main Header */
+  .mainHead {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .btnHead {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .istyle {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  /* Hero Timer */
+  .timer {
+    width: 90vw;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .time h2 {
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
+
+  .time p {
+    font-size: 1rem;
+    word-spacing: 15px;
+  }
+
+  .countDown img {
+    width: 100px;
+  }
+
+  /* Olympic 2028 Card */
+  .olympic2028 {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .olympic2028 img {
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .olyDetail h3 {
+    font-size: 2.5rem;
+    margin-right: 0;
+  }
+
+  .olyDetail button {
+    width: 100%;
+  }
+
+  /* Horizontal Scroll Section */
+  .olympicGames {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+
+/* ---------- Mobile (≤ 600px) ---------- */
+@media (max-width: 600px) {
+
+  /* Top Header Compact */
+  .topBar {
+    align-items: center;
+    text-align: center;
+  }
+
+  .topBtns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .topSign {
+    padding-right: 0;
+  }
+
+  /* Main Header Collapse */
+  .mainHead {
+    flex-direction: column;
+  }
+
+  .logoImg {
+    padding-left: 0;
+  }
+
+  /* Timer Fully Stack */
+  .countDown {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .time h2 {
+    font-size: 1.8rem;
+  }
+
+  .time p {
+    word-spacing: 5px;
+  }
+
+  /* Card Layout */
+  .cardStyle img {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .cardDetail h4 {
+    font-size: 1.8rem;
+  }
+
+  .cardDetail p {
+    font-size: 1.2rem;
+    word-spacing: 5px;
+  }
+
+  /* Host Cards Smaller */
+  .hostCard {
+    width: 160px;
+    height: auto;
+  }
+
+  .hostCard img {
+    width: 160px;
+    height: 160px;
+  }
+
+}
