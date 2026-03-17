@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+}
+.first{
+    /* display: inline-block; */
+    margin-top: 10px;
+    /* position: sticky; */
+}
+.box{
+    display: inline-block;
+}
+.brand{
+    margin-left:10vw;
+    color: rgb(242, 18, 18);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.searchBox{
+    margin-left:10vw;
+    position: relative;
+    bottom: 10px;
+}
+#search{
+    height: 40px;
+    width: 350px;
+    border-style: none;
+    padding-left: 20px;
+    border-radius: 15px;
+    background-color: rgb(241, 238, 238);
+    box-shadow:2px greenyellow;
+}
+
+.loginBox,.signupBox{
+    margin-left: 10vw;
+    position: relative;
+    bottom: 10px;
+    
+}
+.btnStyle{
+    height: 45px;
+    width: 80px;
+    color: rgb(29, 28, 28);
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-style: none;
+}
+/* second  */
+/* .second{
+    position: sticky;
+    top: 45px;
+    background-color: ;
+} */
+.dining,.dilevary,.nightlife{
+    margin-left: 10vh;
+    height: 40px;
+    width: 200px;
+    margin-top: 50px;
+}
+.dining{
+    margin-left: 10vw;
+}
+.dineText,.nightText,.delText{
+    margin-left: 15px;
+    position: relative;
+    bottom: 25px;
+}
+.imgBox{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.third{
+   height: 450px;
+   width: auto;
+   background-color: azure;
+    overflow: hidden;
+}
+.trending{
+    margin-left: 30px;
+    position: relative;
+    top: 20px;
+}
+.trendImg{
+    height: 300px;
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.trendTitle h2{
+    color: rgb(68, 65, 65);
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    
+}
+.trendTitle2{
+    position: relative;
+    bottom: 50px;
+    color: white;
+    left: 10px;
+}
+
+/* main section */
+/* card style */
+.container{
+    height: 330px;
+    width: 315px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: rgb(227, 234, 248);
+    position: relative;
+    border-radius:25px ;
+    border:5px solid white;
+    cursor: pointer;
+}
+.container:hover{
+    border-color: rgb(227, 234, 248);
+}
+
+.cardImg{
+    width: 300px;
+    border-radius: 20px;
+    margin-left: 7px;
+    margin-top: 7px;
+    
+}
+.box{
+    display: inline-block;
+}
+.offer{
+    position: relative;
+    bottom: 50px;
+    margin-left:20px ;
+
+}
+.off{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(235, 46, 46,0.6);
+    display: inline-block;
+}
+.rating,.price,.distance{
+    position: absolute;
+    right: 5px;
+}
+.cardText{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    display: inline-block;
+    margin-left:10px ;
+    margin-bottom: 5px;
+}
+.menu,.address{
+    font-size: 1rem;
+    color: rgb(101, 104, 106);
+    margin-left: 10px;
+    margin-bottom: 5px;
+
+}
+.rating{
+    background-color: chartreuse;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+}
