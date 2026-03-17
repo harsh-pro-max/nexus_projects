@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #F3F4F6; */
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    justify-items: center;
+    background-color: #F3F4F6;
+}
+.head{
+    align-items: center;
+    justify-items: center;
+    background-color: #F3F4F6;
+}
+h1{
+    color:chocolate;
+}
+.head img{
+    height: 100px;
+    margin-left: 37%;
+    
+}
+main{
+    background-color: #F3F4F6;
+}
+/* dowry forms  */
+.dowryCards{
+    background-color:#F3F4F6;
+    padding-left:10vw;
+    padding-right: 5vw;
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+.dowryForm{
+
+    background-color:#fff;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    width: 60%;
+    
+}
+form{
+    padding: 1.5rem;
+}
+.dowryForm ,#salary,#expense{
+    font-size:1rem;
+    padding: 0.5rem;
+    /* width: 97%; */
+    border-radius: 10px;
+    /* margin-top: 1rem; */
+}
+
+#salary{
+    width: 97%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#expense{
+    width: 97%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#education{
+    margin-top: 1rem;
+}
+.dowryForm select{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+label{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+#calculate{
+    width: 97%;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    margin-top: 1rem;
+}
+
+.dowryCal{
+    background-color: #F9FAFB;
+    justify-items: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+.dowryCal h4{
+    color: orange;
+    font-size: 1.5rem;
+
+}
+
+
+/* notice section */
+.notice{
+    background-color: #fff;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    width: 25%;
+}
+.notice h2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+}
+.notice ul > li::marker{
+    color: orange;
+}
+
+.resource{
+    background-color: #fff;
+    padding: 1.5rem;
+    width: 25%;
+    margin-bottom: 1rem;
+}
+.resource h2{
+    padding-top:1rem;
+    padding-bottom:1rem ;
+}
+.resource a{
+    text-decoration: none;
+    color: blue;
+    font-size: 1.2rem;
+}
+
+
+/* dowry rule */
+
+.dowryRule{
+    background-color: #fff;
+    padding: 1.5rem;
+    width: 60%;
+    margin-bottom: 1rem;
+}
+.dowryRule h2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font: bold;
+    font-size: 1.4rem;
+}
+.dowryRule h3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    opacity: 0.7;
+}
+/* footer started */
+
+.footSec{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #1F2937;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.about{
+    width: 30%;
+    color: white;
+}
+.about h3{
+    font-size: 1.5rem;
+}
+.about p{
+    color: white;
+    opacity: 0.7;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+.links{
+    width: 30%;
+    color: white;
+}
+.links h3{
+    padding:0 0 1rem 0 ;
+    font-size: 1.5rem;
+}
+.links a{
+    text-decoration: none;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    color: white;
+    padding-bottom: 0.3rem;
+}
+.disclaimer{
+    width: 30%;
+    color: white;
+}
+.disclaimer h3{
+    font-size: 1.5rem;
+}
+.disclaimer p{
+    font-size: 1.2rem;
+    opacity: 0.7;
+    padding-top: 1rem;
+}

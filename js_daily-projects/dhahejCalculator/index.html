@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhahej Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <img src="./assets/wedding-rings.png" alt="Dhahej Calculator">
+            <h1>Dhahej Calculator</h1>
+            <h2>How much Dowry Should You ask for?</h2>
+        </div>
+    </header>
+    <main>
+        <div class="dowryCards">
+            <div class="dowryForm">
+                <form action="">
+                    <label for="age">Age</label><br>
+                    <select name="age" id="age">
+                        <option>select your age</option>
+                    </select>
+                    <br>
+
+                    <label for="profession">Profession</label>
+                    <br>
+                    <select name="profession" id="profession">
+                        <option selected="true">Select your profession</option>
+
+                        <option value="700000">Doctor</option>
+                        <option value="500000">Engineer</option>
+                        <option value="450000">IT Professional</option>
+                        <option value="600000">Government Employee</option>
+                        <option value="550000">Bussness Owner</option>
+                        <option value="300000">Teacher</option>
+                        <option value="250000">Lowyer</option>
+                        <option value="150000">Other</option>
+                    </select>
+                    <br>
+                    <label for="salary">Monthly Salary</label><br>
+                    <input type="number" placeholder="Enter your monthly salary" id="salary">
+                    <br>
+
+                    <label for="education" class="edu">Education label</label> <br>
+                    <select name="education" id="education">
+                        <option value="">Select your education level</option>
+                        <option value="50000">High School</option>
+                        <option value="100000">Diploma</option>
+                        <option value="200000">Bachelor's degree</option>
+                        <option value="300000">Master's degree</option>
+                        <option value="500000">Doctrate</option>
+
+                    </select><br>
+
+                    <label for="expense">
+                        Education expenses(&#8377;)
+                    </label><br>
+                    <input type="number" name="expense" id="expense" placeholder="Enter Your education expenses">
+                    <br>
+
+                    <label class="space">Marital Status</label><br><br>
+
+                    <input type="radio" name="marital" value="200000" id="single">
+                    <label for="single">Single</label>
+                                    
+                    <input type="radio" name="marital" value="-300000" id="married">
+                    <label for="married">Married</label>
+                                    
+                    <input type="radio" name="marital" value="-200000" id="divorced">
+                    <label for="divorced">Divorced</label>
+                    
+                    <br><br>
+
+                    <label class="space">Home Ownership</label><br><br>
+                    <input type="radio" name="home" id="owned" value="400000">
+                    <label for="owned">Owned</label>
+
+                    <input type="radio" name="home" id="rented" value="0">
+                    <label for="rented">Rented</label>
+                    <br><br>
+
+
+                    <label class="space">Car Ownership</label><br><br>
+                    <input type="radio" name="car" id="yes" value="200000">
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" name="car" id="no" value="0">
+                    <label for="no">no</label>
+                    <br><br>
+
+                    <label for="" class="space">Location</label><br><br>
+                    <input type="radio" name="location" id="urban" value="150000">
+                    <label for="urban">India - Urban</label><br>
+
+                    <input type="radio" name="location" id="rural" value="50000">
+                    <label for="rural">India - Rural</label><br>
+
+                    <input type="radio" name="location" id="outside" value="300000">
+                    <label for="outside">Outside India</label><br>
+
+                    <button id="calculate">Calculate</button>
+                </form>
+
+                <div class="dowryCal" hidden>
+                    <h3>Estimated Dowry Amount:</h3>
+                    <h4 class="result"></h4>
+                    <p >Note: This is a satirical calculator and should not be taken seriously. Dowry is illegal in India under the Dowry Prohibition Act, 1961.</p>
+                </div>
+            </div>
+
+            <div class="notice">
+                <h2>Did you Know?</h2>
+                <ul>
+                    <li>The Dowry Prohibition Act was passed in India in 1961 to prohibit the giving or taking of dowry.
+                    </li>
+
+                    <li>
+                        Despite being illegal, dowry practices continue in many parts of South Asia.
+                    </li>
+
+                    <li>Many organizations are working to educate communities about the harmful effects of dowry.
+                    </li>
+
+                    <li>
+                        Modern marriages are increasingly based on mutual respect rather than financial transactions.
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="resource">
+                <h2> Resource</h2>
+                <a href="">National Commission for Women -
+                Dowry Prohibition Act
+                </a><br>
+                <a href="">
+                    UNICEF India - Ending Child
+                    Marriage
+                </a><br>
+                <a href="">
+                    UN Women - Ending Violence
+                    Against Women
+                </a>
+            </div>
+
+            <div class="dowryRule">
+                <h2>Understanding Dowry Practices</h2>
+
+                <h3>Historical Context</h3>
+                <p>Dowry has been practiced across many cultures throughout history. Originally, it often served as a way to provide financial security for a bride in her new household. However, over time, in many societies, it evolved into a problematic practice that commodified women and created financial burdens for families with daughters.
+                </p>
+
+                <h3>Legal Status in India</h3>
+                <p>In India, the Dowry Prohibition Act of 1961 made giving and taking dowry illegal. The law defines dowry as property or valuable security given either directly or indirectly by one party to a marriage to the other party to the marriage. Despite this legislation, the practice continues in various forms across the country.</p>
+
+                <h3>Modern Perspectives</h3>
+                <p>Today, many young couples and families are rejecting dowry practices in favor of marriages based on mutual respect and equality. Educational campaigns and social movements continue to raise awareness about the harmful effects of dowry on society, particularly on women and their families.</p>
+
+                <div class="yellow">
+                    <h3>Disclaimer</h3>
+                    <p>This calculator is purely satirical and is intended to highlight the absurdity of dowry practices. It is not meant to encourage or promote dowry in any way. We strongly support the elimination of dowry practices and advocate for gender equality and respect in all relationships.</p>
+                </div>
+            </div>
+            
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footSec">
+            <div class="about">
+            <h3>About This Site</h3>
+            <p>The Dahej Calculator is a satirical tool created to raise awareness about the problematic nature of dowry practices. Our mission is to educate and promote equality in marriage and relationships.</p>
+            </div>
+        <div class="links">
+            <h3>Important links</h3>
+            <a href="">Privacy policy</a><br>
+            <a href="">Terms of Service</a><br>
+            <a href="">Contact us</a>
+        </div>
+
+        <div class="disclaimer">
+            <h3>Disclaimer</h3>
+            <p>This website does not promote or endorse dowry practices. Dowry is illegal in India and many other countries. This calculator is for educational and satirical purposes only.</p>
+        </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
