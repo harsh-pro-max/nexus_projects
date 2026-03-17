@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mdn document template</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="mdnDoc">
+        <div class="box header">
+            <div class="firstHead">
+                <div class="logo">
+                    <img src="./assets/mdn.png" alt="mdn logo">
+                </div>
+                <div class="navBtn">
+                    <button>
+                        HTML <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <button>
+                        CSS <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <button>
+                        JAVASCRIPT <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <button>
+                        WEB API <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <button>
+                        ALL <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <button>
+                        LERN <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <button>
+                        TOOLS <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <button>
+                        ABOUT <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <button>
+                        BLOG <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="rightNav">
+                    <input type="text" placeholder="search">
+
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+
+                
+            </div>
+            <div class="secondHead">
+                <div class="leftSide">
+                    <p>Web > CSS > Guides > Grid Layout > Basic Concept</p>
+                </div>
+                <div class="rightSide">
+                    <span><i class="fa-solid fa-circle-half-stroke"></i> Theme</span>
+
+                    <span><i class="fa-solid fa-language"></i>English (US)</span>
+                </div>
+            </div>
+        </div>
+        <div class="box nav">
+            <div class="filter">
+                <i class="fa-solid fa-filter"></i>
+                <input type="text" placeholder="Filter">
+            </div>
+            <div class="modules">
+                <h2>CSS</h2>
+                <h3>Guides</h3>
+                <ul>
+                    <li><a href="">Modules</a></li>
+                    <li><a href="">Anchor positioning</a></li>
+                    <li><a href="">Animations</a></li>
+                    <li><a href="">Backgrounds and borders</a></li>
+                    <li><a href="">Box alignment</a></li>
+                    <li><a href="">Box model</a></li>
+                    <li><a href="">Box sizing</a></li>
+                    <li><a href="">Cascade</a></li>
+                    <li><a href="">Cascading variables</a></li>
+                    <li><a href="">Colors</a></li>
+                    <li><a href="">Columns</a></li>
+                    <li><a href="">Conditional rules</a></li>
+                    <li><a href="">Containment</a></li>
+                    <li><a href="">Counters</a></li>
+                    <li><a href="">CSSOM view</a></li>
+                    <li><a href="">Custom functions and mixins</a></li>
+                    <li><a href="">Grid and other layouts
+</a></li>
+                    <li><a href="">Using line-based placement</a></li>
+                    <li><a href="">Grid template areas</a></li>
+                    <li><a href="">Using named grid lines</a></li>
+                    <li><a href="">Using auto-placement
+</a></li>
+                    <li><a href="">Aligning items</a></li>
+                    <li><a href="">Logical values and writing modes</a></li>
+                    <li><a href="">Grid layout and accessibility</a></li>
+                    <li><a href="">Common grid layouts</a></li>
+                    <li><a href="">Masonry layout</a></li>
+                    <li><a href="">python</a></li>
+                    <li><a href="">java</a></li>
+
+                    <li><a href="">Using line-based placement</a></li>
+                    <li><a href="">Grid template areas</a></li>
+                    <li><a href="">Using named grid lines</a></li>
+                    <li><a href="">Using auto-placement
+</a></li>
+                    <li><a href="">Aligning items</a></li>
+                    <li><a href="">Logical values and writing modes</a></li>
+                    <li><a href="">Grid layout and accessibility</a></li>
+                    <li><a href="">Common grid layouts</a></li>
+                    <li><a href="">Masonry layout</a></li>
+                    <li><a href="">html</a></li>
+                    <li><a href="">javaScript</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="box contant">
+            <h1>Relationship of grid layout to other layout methods</h1>
+
+            <p><span>CSS grid layout</span> is designed to work alongside other parts of CSS, as part of a complete system for doing the layout. This guide explains how grid layout fits together with other techniques</p>
+
+            <h2>Grid and flexbox</h2>
+            <p>The basic difference between CSS grid layout and CSS flexbox layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time. The two specifications both use CSS box alignment features. If you have already learned how to use flexbox, the similarities should help you get to grips with grid.
+                
+            </p>
+
+            <h3>One-dimensional versus two-dimensional layout</h3>
+            <p>A basic example can demonstrate the difference between one- and two-dimensional layouts.
+
+In this first example, we use flexbox to lay out a set of boxes. We have five child items in our container, and we have given the flex properties values so that they can grow and shrink from a flex-basis of 150 pixels.
+
+We also set the flex-wrap property to wrap, so that if the space in the container becomes too narrow to maintain the flex basis, items will wrap onto a new row.</p>
+        <h3>Content out or layout in?</h3>
+        <p>
+In addition to the one-dimensional versus two-dimensional distinction, there is another way to decide if you should use flexbox or grid for a layout. Flexbox works from the content out. An ideal use case for flexbox is when you have a set of items and want to space them out evenly in a container. You let the size of the content decide how much individual space each item takes up. If the items wrap onto a new line, they will work out their spacing based on their size and the available space on that line.
+
+Grid works from the layout in. When you use CSS grid layout you create a layout and then you place items into it, or you allow the auto-placement rules to place the items into the grid cells according to that strict grid. It is possible to create tracks that respond to the size of the content, however, they will also change the entire track.
+
+If you are using flexbox and find yourself disabling some of the flexibility, you probably need to use CSS grid layout. For example, if you are setting a width on a flex item to make it line up with other items in a row above, a grid is likely a better choice.</p>
+            <h3>Box alignment</h3>
+            <p>
+Most grid alignment features were originally defined is the CSS flexible box layout. These features provided proper alignment control for the first time and enabled centering a box on the page. Flex items can stretch to the height of the flex container, meaning that equal height columns were possible. These properties are now defined in the CSS box alignment module, and are used in multiple layout modes, including grid layout.
+
+We will be taking a proper look at Aligning items in CSS grid layout later. For now, here is a comparison between examples of flexbox and grid.
+
+In the first example, which uses flexbox, we have a container with three items inside. The container's min-height is set, so it defines the height of the flex container. We have set align-items on the flex container to flex-end so the items will line up at the end of the flex container. We have also set the align-self property on box1 so it will override the default and stretch to the height of the container and on box2 so it aligns to the start of the flex container</p>
+    <h3>The fr unit and flex-basis</h3>
+            <p>
+We have already seen how the fr unit works to assign a proportion of available space in the grid container to our grid tracks. The fr unit, when combined with the minmax() function can give us very similar behavior to the flex properties in flexbox while still enabling the creation of a layout in two dimensions.
+
+If we look back at the example where we demonstrated the difference between one and two-dimensional layouts, you can see there is a difference between the way that the two layouts work responsively. With the flex layout, if we drag our window wider and smaller, the flexbox does a nice job of adjusting the number of items in each row according to the available space. If we have a lot of space all five items can fit on one row. If we have a very narrow container we may only have space for one.
+
+In comparison, the grid version always has three column tracks. The tracks themselves will grow and shrink, but there are always three since we asked for three when defining our grid</p>
+        </div>
+        <div class="box article">
+            <h3>In this article</h3>
+            <p>Grid and flexBox</p>
+            <p>Grid and absolutaly positional element</p>
+            <p>Grid and display: contents See also</p>
+        </div>
+        <div class="box footer">footer</div>
+    </div>
+    
+</body>
+</html>

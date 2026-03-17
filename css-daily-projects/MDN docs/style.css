@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* layout created */
+.mdnDoc{
+    min-height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 300px 1fr 250px;
+    grid-template-rows: auto 1fr auto;
+    gap: 0.5rem;
+    grid-template-areas: 
+    "header header header"
+    "nav contant article"
+    "footer footer footer";
+    /* padding: 0.5rem; */
+
+}
+
+.header{
+    grid-area: header;
+    /* background-color: rgb(128, 105, 105); */
+    height: 100px;
+    position: fixed;
+    /* position: sticky; */
+    /* top: 0px; */
+    width: 100%;
+    /* padding-bottom: 200px; */
+}
+
+.nav{
+    grid-area: nav;
+    /* background-color: rgb(236, 233, 233); */
+
+}
+.contant{
+    grid-area: contant;
+    /* background-color: cadetblue; */
+    
+}
+.article{
+    grid-area: article;
+    /* background-color: bisque; */
+
+}
+.footer{
+    grid-area: footer;
+    background-color: cornflowerblue;
+}
+
+/* header work  */
+.firstHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.7rem;
+    background-color: white;  
+    justify-items: center;
+    padding-left: 1rem;
+    padding-right: 1.5rem;
+}
+.logo img{
+    width: 200px;
+}
+.navBtn > button{
+    border: 0;
+    background-color: white;
+    color: black;
+    font-size: 1.3rem;
+    padding-left: 0.8rem;
+}
+.navBtn > button > i{
+    font-size: 1rem;
+}
+.rightNav{
+    padding-right: 2rem;
+}
+.rightNav input{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    width: 5rem;
+    border-radius: 25px;
+    /* padding-right: 2rem; */
+}
+.rightNav i{
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+/* second head  */
+.secondHead{
+    height: 2rem;
+    background-color: #F7F7F8;
+    display: flex;
+    border-bottom: 0.5px solid black;
+    border-top: 0.5px solid black;
+    
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.leftSide p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 0.5rem;
+}
+.rightSide span{
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+
+/* navigation part */
+
+.filter{
+    width: 100%;
+    background-color: white;
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+    align-items: center;
+    justify-items: center;
+    /* position: relative; */
+    padding-top: 1rem;
+    position: sticky;
+    top: 107px;
+}
+.filter input{
+    padding: 0.5rem;
+    border-radius: 30px;
+    width: 65%;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+.modules{
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    background-color: white;
+    /* overflow-y: scroll; */
+    
+}
+.modules ul {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+.modules ul > li{
+    list-style-type: "> ";
+    padding-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+.modules ul > li >a {
+    text-decoration: none;
+    color: black;
+}
+
+/* contant part  */
+
+.contant{
+    padding: 2rem;
+    background-color: white;
+}
+.contant p{
+    font-size: 30px;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+
+}
+/* article part */
+.article{
+    padding: 1rem;
+
+}
+.article h3{
+    font-size: 35px;
+    padding-bottom: 1rem;
+}
+.article p{
+    font-size: 25px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
