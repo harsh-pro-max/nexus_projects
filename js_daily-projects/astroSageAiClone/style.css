@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* header section */
+/* first header  */
+.firstHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFC107;
+}
+.firstSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.logoImg{
+    padding-left: 2rem;
+    padding-right: 1rem;
+    width: 65px;
+}
+.firstSection a{
+    text-decoration: none;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    color: black;
+    font-size: 0.9rem;
+}
+.firstSection a:hover{
+    text-decoration:underline;
+}
+
+.secondSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.secondSection a{
+    background-color: white;
+    padding: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 1rem;
+}
+
+.secondSection span{
+    background-color: none;
+    margin-left: 1rem;
+    border: 0.01rem solid black;
+    padding: 0.4rem;
+}
+
+.thirdSection span{
+    background-color: #ffffff;
+    padding: 0.4rem;
+    margin-right: 2rem;
+    
+}
+.thirdSection span> a{
+    color: #BE3318;
+    font-weight: bold;
+}
+/* second header */
+.secondHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+.secondHead h1{
+    padding-left: 2rem;
+    color: #FF933F;
+    font-size: 2.5rem;
+}
+.lang{
+    margin-left: auto;
+}
+table td{
+    border: 1px solid #FFE082;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+table td:hover{
+    background-color: #FFF8E1;
+    color: #FF403A;
+}
+.lang{
+    padding-right: 2rem;
+
+}
+.lang button{
+    padding: 0.2rem;
+    color: white;
+    background-color: #FF6F00;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 3px;
+}
+
+.thirdHead {
+    background-color: #FFF8E1;
+    padding-top: 0.5rem;
+    padding-bottom:0.5rem;
+    padding-left: 2rem;
+}
+.thirdHead a{
+    text-decoration: none;
+    text-align: center;
+    /* padding: 5px; */
+    color: black;
+    font-size: 0.8rem;
+}
+.thirdHead a:hover,.fourthHead a:hover{
+    color: #BE3318;
+    text-decoration: underline;
+}
+
+.fourthHead{
+    padding-top: 0.5rem;
+    padding-bottom:0.5rem;
+    padding-left: 2rem;
+}
+.fourthHead a{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.container{
+    display: grid;
+    padding-top: 0.5rem;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: 
+    "first second"
+    "third second"
+    "fourth second"
+    "fifth second";
+
+    gap: 0.5rem;
+    height: auto; /* 🔥 important */
+    background-color: #FF933F;
+}
+
+.box{
+    /* width: 100%; */
+    
+    background-color: #FF403A;
+}
+
+/* areas */
+.first { 
+    grid-area: first;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    
+}
+
+/* slider images */
+.first img{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* active image */
+.first img.active{
+    opacity: 1;
+}
+
+
+
+
+.third { 
+    grid-area: third; 
+    background-color: #F7F7F7;
+}
+.linkStatus{
+    background-color: #FFECB3;
+    padding: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+.linkStatus span{
+    padding-left: 1rem;
+}
+.detaled{
+    background-color: #FFFFFF;
+    margin: 0.5rem;
+
+}
+.detaled h2{
+    font-size: 25px;
+    padding: 1rem;
+    
+}
+.detaled p{
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.calculationBox{
+    width: 80%;
+    background-color: #FBF7EB;
+    text-align: center;
+    margin: 0 auto;   
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    border: 0.5rem solid #FF6F00;
+}
+.calculationBox h3{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+form{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+}
+form > label{
+    font-size: 1.3rem;
+    font-weight:500;
+
+}
+#name{
+    width: 60%;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+#age{
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+#gender{
+    width: 60%;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+form > label > span{
+    color: #FF403A;
+}
+#day,#hour,#minute,#second{
+    width: 15%;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+
+}
+#month{
+    width: 15%;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+#year{
+    width: 15%;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#astro{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #FF6F00;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/* .second { 
+    
+} */
+
+.second{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 1rem;
+    grid-area: second;
+}
+
+/* card */
+.product-card{
+    background-color: #FBF7EB;
+    border: 1px solid #e0c98f;
+    padding: 0.5rem;
+}
+
+/* title */
+.product-title{
+    background-color: #e6d39c;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+/* body layout */
+.product-body{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* image */
+.product-body img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* text */
+.product-desc{
+    flex: 1;
+    font-size: 0.9rem;
+    
+}
+
+/* button */
+.buy-btn{
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+}
+/* fourth div */
+
+.fourth{
+    grid-area: fourth;
+    background-color: #FFF8E1;
+    padding: 1rem;
+}
+
+/* title */
+.section-title{
+    font-size: 1.8rem;
+    color: #5d4a00;
+    margin-bottom: 1rem;
+}
+
+/* layout */
+.remedy-wrapper{
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* LEFT CARD */
+.left-card{
+    width: 25%;
+    background: #f5f5f5;
+    padding: 1rem;
+    border: 1px solid #e0c98f;
+    text-align: center;
+}
+
+.left-card h3{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.left-img-box{
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.left-img-box img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.left-card p{
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* RIGHT GRID */
+.right-grid{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* CARD */
+.card{
+    background: #f5f5f5;
+    border: 1px solid #e0c98f;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.card h4{
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.card p{
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.card span{
+    color: red;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* button */
+.buy-btn{
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+
+.fifth { 
+    grid-area: fifth;
+    background-color:#e6d39c;
+ }
+
+ /* footer section */
+ /* footer base */
+.footer{
+    background-color: #f5f5f5;
+    margin-top: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+/* top links */
+.footer-top{
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* middle section */
+.footer-middle{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.footer-middle h2{
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    color: #5d4a00;
+}
+
+.footer-middle p{
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* bottom */
+.footer-bottom{
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    color: #333;
+}

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AstroSage Ai</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header >
+      <div class="firstHead">
+        <div class="firstSection">
+          <img src="./assets/logo.png" alt="logo image" class="logoImg" />
+          <a href="" class="headLink"> Rashifal </a> |
+          <a href="" class="headLink"> Kundali</a> |
+          <a href="" class="headLink"> Rashifal 2026 </a> |
+          <a href="" class="headLink"> Horoscope 2026 </a> |
+          <a href="" class="headLink"> Today Horoscope </a> |
+          <a href="" class="headLink"> Calendar 2026 </a>
+        </div>
+        <div class="secondSection">
+          <a href=""
+            ><i class="fa-brands fa-rocketchat"></i> Chat with Astrologer
+          </a>
+          <span> <i class="fa-solid fa-wallet"></i> &#8377; 0 </span>
+        </div>
+        <div class="thirdSection">
+          <span><a href=""> SIGN IN </a>/ <a href="">SIGN UP</a></span>
+        </div>
+      </div>
+      <div class="secondHead">
+        <h1>Astrology</h1>
+        <table>
+          <tbody>
+            <tr>
+              <td>ARIES</td>
+              <td>TAURUS</td>
+              <td>GEMINI</td>
+              <td>CANCER</td>
+              <td>LEO</td>
+              <td>VIRGO</td>
+            </tr>
+            <tr>
+              <td>LIBRA</td>
+              <td>SCORPIO</td>
+              <td>SAGITTARIUS</td>
+              <td>CAPRICORN</td>
+              <td>AQUARIUS</td>
+              <td>PISCES</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="lang">
+          <button id="0">த</button>
+          <button id="1">ౌ</button>
+          <button id="2">ங</button>
+          <button id="3">ு</button>
+          <button id="4">म</button>
+          <button id="5">बा</button>
+          <button id="6">ழ</button>
+          <button id="7">و</button>
+          <button id="8">हि</button>
+          <button id="9">ने</button>
+          <button id="10">ଅ</button>
+          <button id="11">अ</button>
+          <button id="12">ँ</button>
+        </div>
+        <!-- <div id="langDisplay"></div> -->
+      </div>
+      <div class="thirdHead">
+        <a href="#">Home <span>▼</span></a>
+        <a href="#">Horoscope <span>▼</span></a>
+        <a href="#" class="active">Astrology <span>▼</span></a>
+        <a href="#">2026 <span>▼</span></a>
+        <a href="#">Occult <span>▼</span></a>
+        <a href="#">Free Reports <span>▼</span></a>
+        <a href="#">Healing <span>▼</span></a>
+        <a href="#">Panchang <span>▼</span></a>
+        <a href="#">Lal Kitab <span>▼</span></a>
+        <a href="#">KP <span>▼</span></a>
+        <a href="#">Compatibility <span>▼</span></a>
+        <a href="#">Calculators <span>▼</span></a>
+        <a href="#">Festivals <span>▼</span></a>
+        <a href="#">Misc <span>▼</span></a>
+      </div>
+      <div class="fourthHead">
+        <a href="#">Numerology Calculator</a>
+        <a href="#">Moon Sign</a>
+        <a href="#">Sun Sign</a>
+        <a href="#" class="active">Rasi Calculator</a>
+        <a href="#">Ascendant Calculator</a>
+        <a href="#">Ayanamsa Calculator</a>
+        <a href="#">Nakshatra Calculator</a>
+        <a href="#">Love Calculator</a>
+        <a href="#">Friendship Calculator</a>
+      </div>
+    </header>
+
+    <main >
+      <div class="container">
+        <div class="box first">
+          <img src="./assets/scrollI1.jpg" alt="scroll 1" />
+          <img src="./assets/scroll2.jpg" alt="scroll 2" />
+          <img src="./assets/scroll3.jpg" alt="" />
+          <img src="./assets/scroll4.jpg" alt="scroll 4" />
+          <img src="./assets/scroll5.jpg" alt="scroll 5" />
+        </div>
+        <div class="box third">
+          <div class="linkStatus">
+            <span>Home >></span>
+            <span>Free Report >></span>
+            <span>Detailed Horoscope</span>
+          </div>
+          <div class="detaled">
+            <h2>Detailed Horoscope</h2>
+            <p>
+              If you are looking for the detailed horoscope based on your date
+              of birth, time of birth and place of birth, you need not to go
+              anywhere else. AstroSage.com generated 50 pages detailed horoscope
+              online for you that too absolutely free. You can read various
+              reports online and you can also take printout. This personalized
+              horoscope will not only tell you about your personality but will
+              also predict how will be your future from various important
+              aspects of life like marriage, finance and child-birth etc. Enter
+              your birth details and get your detailed horoscope now -
+            </p>
+          </div>
+          <div class="calculationBox">
+            <h3>Enter Your Birth Details</h3>
+            <form action="">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Name" required/> <br />
+
+              <label for="gender"> Gender </label>
+              <select name="gender" id="gender" required>
+                <option selected>gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option></select
+              ><br />
+
+              <label for="date">Date <span>(DD/MM/YYYY)</span></label>
+              <input
+                type="number"
+                min="1"
+                max="31"
+                placeholder="Day"
+                id="day"
+                required
+              />
+              <input
+                type="number"
+                min="1"
+                max="12"
+                placeholder="Month"
+                id="month"
+                required
+              />
+              <input
+                type="number"
+                placeholder="Year"
+                min="1900"
+                max="2099"
+                id="year"
+                required
+              />
+
+              <br />
+              <label for="time">Time <span>(24 hours format)</span></label>
+              <input
+                type="number"
+                placeholder="Hours"
+                min="1"
+                max="24"
+                id="hour"
+                required
+              />
+              <input
+                type="number"
+                placeholder="Minute"
+                min="1"
+                max="60"
+                id="minute"
+                required
+              />
+              <input
+                type="number"
+                placeholder="Second"
+                min="1"
+                max="60"
+                id="second"
+                required
+              />
+              <br />
+              <label for="age">Age</label>
+
+              <input type="number" placeholder="Enter your age" id="age" required><br>
+
+              <button id="astro" type="submit">Astrology Report</button>
+            </form>
+            <div class="resultBox" >
+              
+            </div>
+          </div>
+        </div>
+
+
+        <div class="box second">
+
+          <!-- <h3 class="product-title">Buy Gemstones</h3>
+
+          <div class="product-body">
+            <img src="./assets/yantras.png" alt="product" />
+
+            <div class="product-card">
+              <p class="product-desc">
+                Best quality gemstones with assurance of AstroSage.com
+              </p>
+              <button class="buy-btn">Buy Now</button>
+              
+            </div> -->
+          </div>
+      </div>
+
+      <div class="box fourth">
+
+        <h2 class="section-title">
+            Astrological remedies to get rid of your problems
+        </h2>
+
+        <div class="remedy-wrapper">
+
+            <!-- LEFT BIG CARD -->
+            <div class="left-card">
+                <h3>Red Coral / Moonga (3 Carat)</h3>
+
+                <div class="left-img-box">
+                    <img src="./assets/left.jpg" alt="coral">
+                </div>
+
+                <p>Ward off evil spirits and strengthen Mars.</p>
+
+                <button class="buy-btn">BUY NOW</button>
+            </div>
+
+            <!-- RIGHT GRID -->
+            <div class="right-grid">
+
+                <!-- CARD 1 -->
+                <div class="card">
+                    <img src="./assets/gemstone.jpg" alt="">
+                    <h4>Gemstones</h4>
+                    <p>Buy Genuine Gemstone...</p>
+                    <span>CHECK NOW</span>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card">
+                    <img src="./assets/yantras.png" alt="">
+                    <h4>Yantras</h4>
+                    <p>Energised Yantras for You.</p>
+                    <span>CHECK NOW</span>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card">
+                    <img src="./assets/rudrakshaa.jpg" alt="">
+                    <h4>Rudraksha</h4>
+                    <p>Original Rudraksha to Bless You.</p>
+                    <span>CHECK NOW</span>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="card">
+                    <img src="./assets/fengshui.jpg" alt="">
+                    <h4>Feng Shui</h4>
+                    <p>Bring Good Luck to your Place.</p>
+                    <span>CHECK NOW</span>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="card">
+                    <img src="./assets/mala.jpg" alt="">
+                    <h4>Mala</h4>
+                    <p>Praise the Lord with Divine Energy.</p>
+                    <span>CHECK NOW</span>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="card">
+                    <img src="./assets/jadi.jpg" alt="">
+                    <h4>Jadi (Tree Roots)</h4>
+                    <p>Keep Your Place Holy and Pure.</p>
+                    <span>CHECK NOW</span>
+                </div>
+             </div>
+          </div>
+      </div>
+      
+      <div class="box fifth"></div>
+      </div>
+    </main>
+    <footer class="footer">
+
+    <!-- 🔹 TOP LINKS -->
+    <div class="footer-top">
+        <p>
+            AstroSage AI Shop | List of Gemstone | World Clock | Astrologers | Mahadasha | Zodiac Signs | Astrologer in Noida | Free Kundli Match | Free Kundli | Moon Sign Horoscope | KP Astrology |
+            Press | AstroSage AI #1 Indian AI App | Global Media Spotlight | AstroSage AI’s Breakthrough AI Astrologer | 10 Crore Question Answered By AI Astrologers | AstroSage AI Reviews |
+            Lal Kitab | Horoscope 2026 | राशिफल 2026 | Holidays 2026 | Calendar 2026 | Astrology 2026 | Astrology Tools | Feedback | Submit Article | Contact Us | About Us | Payment | Privacy Policy |
+            Terms and Conditions | Support | Jobs@AstroSage | Astrologer Registration
+        </p>
+    </div>
+
+    <!-- 🔹 MIDDLE SECTION -->
+    <div class="footer-middle">
+        <h2>Online Consultation</h2>
+
+        <p>
+            Talk to Astrologers | Chat with Astrologer | Online Astrology Consultation | Marriage Astrologers | Tarot Readers | Numerologists |
+            Love Astrologers | Career Astrologers | Vedic Astrologers | Vastu Experts | Financial Astrologers | KP Astrologers |
+            Nadi Astrologers | Best Reiki Healers
+        </p>
+    </div>
+
+    <!-- 🔹 BOTTOM -->
+    <div class="footer-bottom">
+        <p>© All copyrights reserved 2026 AstroSage.com.</p>
+    </div>
+
+</footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
