@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Profile Information</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <input type="text" placeholder="Enter Github User Name" id="searchInp" value="harsh-pro-max">
+        <button id="search">Search</button>
+    </header>
+
+    <main class="container">
+
+        <!-- LEFT: PROFILE -->
+        <section class="profileCard">
+            <img src="" alt="avatar" class="avatar disable">
+
+            <h1 id="name"></h1>
+            <h2 id="userId"></h2>
+
+            <p id="bio"></p>
+
+            <button id="edit" class="disable">Edit profile</button>
+
+            <div class="stats">
+                <p class="followers"></p>
+            </div>
+        </section>
+
+        <!-- RIGHT: REPOSITORIES -->
+        <section class="repoSection disable">
+            <h2 class="repoTitle disable">Repositories</h2>
+
+            <div class="repoContainer">
+
+                <!-- SINGLE REPO CARD (template for JS loop) -->
+                <!-- <div class="repoCard">
+                    <div class="repoTop">
+                        <h3 class="repoName">Repo Name</h3>
+                        <span class="publicBtn">Public</span>
+                    </div>
+
+                    <p class="repoDesc">Repo description...</p>
+
+                    <div class="repoBottom">
+                        <span class="language">JavaScript</span>
+                        <span class="lastUpdate">Updated 2 days ago</span>
+                    </div> -->
+
+                    <!-- <select class="repoTag">
+                        <option selected>List</option>
+                        <option>Future idea</option>
+                        <option>My Stack</option>
+                        <option>Inspiration</option>
+                    </select> -->
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
