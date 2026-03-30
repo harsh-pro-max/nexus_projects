@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our news app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1>NewsHub</h1>
+            <div class="headLinks">
+                <a href="#" >Home</a>
+                <a href="#">Technology</a>
+                <a href="#">Business</a>
+                <a href="">Sports</a>
+                <a href="">Entertainment</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search" id="searches" value="india">
+                <img src="./assets/harsh.png" alt="author">
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="root">
+            <!-- News Card -->
+            <article class="news-card">
+
+                <!-- Image Section -->
+                <div class="news-card__image-wrapper">
+                    <img class="news-card__image" src="./assets/harsh.png" alt="news image">
+                </div>
+
+                <!-- Content Section -->
+                <div class="news-card__content">
+
+                    <!-- Title -->
+                    <h2 class="news-card__title">
+                    NEWS_TITLE
+                    </h2>
+
+                    <!-- Meta Info -->
+                    <div class="news-card__meta">
+                    <span class="news-card__source">SOURCE_NAME</span>
+                    <span class="news-card__dot">•</span>
+                    <span class="news-card__time">PUBLISHED_TIME</span>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="news-card__description">
+                    NEWS_DESCRIPTION
+                    </p>
+
+                    <!-- Action -->
+                    <div class="news-card__actions">
+                    <a class="news-card__link" href="NEWS_URL" target="_blank">
+                        Read More →
+                    </a>
+                    </div>
+
+                </div>
+            </article>
+        </div>
+
+        
+
+    </main>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

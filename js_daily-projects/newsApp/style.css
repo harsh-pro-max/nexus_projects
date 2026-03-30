@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F6F7F9;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+}
+.head h1{
+    font-size: 2.5rem;
+}
+.headLinks{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.headLinks a{
+    text-decoration: none;
+    color: black;
+}
+.headLinks a:hover{
+    text-decoration: underline;
+
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.search input{
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.search img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* main section card section */
+.root {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+  padding: 1rem;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card__image-wrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.news-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
