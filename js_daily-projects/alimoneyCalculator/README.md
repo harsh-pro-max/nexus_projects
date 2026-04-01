@@ -27,20 +27,20 @@ It is a clone-style project developed to strengthen core frontend development sk
 
 
 ---
-
 ## 📸 Screenshots
-(Add your project screenshots inside `/assets` folder)
-`./assets/image1.png`
-`./assets/image2.png`
 
+### Screenshot 1
+![Screenshot 1](./assets/image1.png)
+
+### Screenshot 2
+![Screenshot 2](./assets/image2.png)
 
 ---
 
 ## 🎬 Demo
 Preview of the project:
-
-video demo:  
-`./assets/demoVideo.mp4`
+Video file:
+[Watch Demo](./assets/demoVideo.mp4)
 
 ---
 
