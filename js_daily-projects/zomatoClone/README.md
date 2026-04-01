@@ -34,7 +34,7 @@ It focuses on improving skills in **API/data handling, DOM manipulation, and UI 
 
 ## 🎬 Preview of the project:  
 Video file:  
-[Watch Demo](./assets/demoVideo.mp4)
+[Watch Demo](./assets/demoVideo.gif)
 
 ---
 
