@@ -36,7 +36,7 @@ It is designed to strengthen understanding of **API integration, asynchronous Ja
 ## 🎬 Demo
 Preview of the project:  
 Video file:  
-[Watch Demo](./assets/demoVideo.mp4)
+[Watch Demo](./assets/demoVideo.gif)
 
 ---
 
