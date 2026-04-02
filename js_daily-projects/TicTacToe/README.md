@@ -39,7 +39,7 @@ It is a logic-based project focused on strengthening understanding of **game log
 ## 🎬 Demo
 Preview of the project:  
 Video file:  
-[Watch Demo](./assets/demoVideo.mp4)
+[Watch Demo](./assets/demoVideo.gif)
 
 ---
 
