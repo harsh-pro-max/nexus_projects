@@ -35,7 +35,7 @@ It is a clone-style project developed to strengthen frontend development skills 
 ## 🎬 Demo
 Preview of the project:  
 Video file:  
-[Watch Demo](./assets/demoVideo2.mp4)
+[Watch Demo](./assets/demoVideo.gif)
 
 ---
 
