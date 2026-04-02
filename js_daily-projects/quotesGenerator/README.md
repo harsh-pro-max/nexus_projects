@@ -35,7 +35,7 @@ It is a beginner-friendly project created during JavaScript revision to strength
 ## 🎬 Demo
 Preview of the project:  
 Video file:  
-[Watch Demo](./assets/demoVideo.mp4)
+[Watch Demo](./assets/demoVideo.gif)
 
 ---
 
