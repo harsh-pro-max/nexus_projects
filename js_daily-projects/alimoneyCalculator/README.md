@@ -40,7 +40,7 @@ It is a clone-style project developed to strengthen core frontend development sk
 ## 🎬 Demo
 Preview of the project:
 Video file:
-[Watch Demo](./assets/demoVideo.mp4)
+[Watch Demo](./assets/demoVideo.gif)
 
 ---
 
