@@ -35,7 +35,7 @@ It is a beginner-level project focused on understanding **arrays, conditional lo
 ## 🎬 Demo
 Preview of the project:  
 (Video can be added later if available)
-
+[Watch Demo](./assets/demoVideo.gif)
 ---
 
 ## ⚙️ How to Run the Project
