@@ -39,7 +39,7 @@ It is a logic-based project developed to improve skills in form handling, condit
 ## 🎬 Demo
 Preview of the project:  
 Video file:  
-[Watch Demo](./assets/demoVideo.mp4)
+[Watch Demo](./assets/demoVideo.gif)
 
 ---
 
