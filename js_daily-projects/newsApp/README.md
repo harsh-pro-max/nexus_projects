@@ -38,7 +38,7 @@ It is designed to strengthen understanding of API integration, asynchronous Java
 ## 🎬 Demo
 Preview of the project:  
 Video file:  
-[Watch Demo](./assets/demoVideo.mp4)
+[Watch Demo](./assets/demoVideo.gif)
 
 ---
 
