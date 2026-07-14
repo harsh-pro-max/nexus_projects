@@ -1,0 +1,17 @@
+{
+  "name": "githubprofileview",
+  "version": "1.0.0",
+  "description": "",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "D": "^1.0.0",
+    "parcel": "^2.16.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  }
+}

@@ -1,0 +1,18 @@
+import React, { useEffect, useState } from "react";
+import ReactDOM from "react-dom/client";
+import Header from "./Components/Header";
+import Body from "./Components/Body";
+function GithubProfile(){
+
+    return(
+        <>
+        {/* <Header></Header> */}
+
+        <Body/>
+        </>
+    )
+}
+
+const Root=ReactDOM.createRoot(document.getElementById('root'));
+
+Root.render(<GithubProfile/>);
